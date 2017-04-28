@@ -10,7 +10,8 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=yes ..'''
     }
     stage('Build') {
       steps {
-        sh 'make'
+        sh '''cd build
+make'''
       }
     }
   }
