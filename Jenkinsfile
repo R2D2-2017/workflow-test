@@ -14,5 +14,10 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=yes ..'''
 make'''
       }
     }
+    stage('cleanup') {
+      steps {
+        cleanWs(cleanWhenSuccess: true, notFailBuild: true)
+      }
+    }
   }
 }
