@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('Run cmake') {
       steps {
-        sh '''mkdir bin
-cd bin
-cmake ..'''
+        sh 'cmake ..'
       }
     }
     stage('Build') {
