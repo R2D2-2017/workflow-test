@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('Run cmake') {
       steps {
-        sh '''cd module-naam
-cmake .'''
+        sh 'cmake .'
       }
     }
     stage('Build') {
