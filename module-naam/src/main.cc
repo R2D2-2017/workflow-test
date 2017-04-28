@@ -9,6 +9,5 @@
 
 int main(int argc, char **argv) {
     std::cout << "Hoi wereld!\n";
-    Hallo dit is een domme fout om CI te testen.
     return 0;
 }
