@@ -6,10 +6,5 @@ pipeline {
         echo 'Hallo'
       }
     }
-    stage('') {
-      steps {
-        fileExists 'thisneverexists.txt'
-      }
-    }
   }
 }
