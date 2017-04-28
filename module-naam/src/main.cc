@@ -9,5 +9,6 @@
 
 int main(int argc, char **argv) {
     std::cout << "Hoi wereld!\n";
+    std::cout << "Vanuit jenkins";
     return 0;
 }
