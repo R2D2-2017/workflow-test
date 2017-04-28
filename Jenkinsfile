@@ -1,9 +1,16 @@
 pipeline {
   agent any
   stages {
-    stage('Hallo') {
+    stage('Run cmake') {
       steps {
-        echo 'Hallo'
+        sh '''mkdir bin
+cd bin
+cmake ..'''
+      }
+    }
+    stage('Build') {
+      steps {
+        sh 'make'
       }
     }
   }
